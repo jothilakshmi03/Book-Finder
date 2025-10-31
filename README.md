@@ -1,16 +1,79 @@
-# React + Vite
+# Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application to search, browse, and view book details using the Open Library API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔍 Search books by title, author, or subject/genre
+- 📚 View detailed information with cover images, publish year, and subjects
+- 💡 Modern, mobile-friendly card layout
+- 🌙 Light/Dark mode toggle
+- 🚦 Graceful error and loading states
 
-## React Compiler
+## Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Live Demo](https://jothilakshmi03.github.io/Book-Finder/)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) and npm installed
+
+### Installation
+
+1. Clone the repository:
+git clone https://github.com/jothilakshmi03/Book-Finder.git
+cd Book-Finder
+
+text
+
+2. Install dependencies:
+npm install
+
+text
+
+### Development
+
+To start the app locally:
+
+npm run dev
+
+text
+
+### Build and Deploy
+
+To build for production:
+
+npm run build
+
+text
+To deploy to GitHub Pages (after `vite.config.js` `base` is set):
+npm run deploy
+
+text
+
+## Usage
+
+- Enter a book title, author, or genre in the search bar.
+- Browse the results in card view.
+- Click on any result to view more details in a modal.
+
+## Technologies
+
+- React
+- Vite
+- Open Library API
+- CSS
+
+## Contributing
+
+Contributions and suggestions welcome! Open an issue or create a pull request.
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+> Built by [jothilakshmi03](https://github.com/jothilakshmi03).
