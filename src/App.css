@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f6f8fa;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.book-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #e2e8f0;
+  width: 150px;
+  padding: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform .2s;
+}
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px #b9c8da;
+}
+.book-card img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.loader {
+  text-align: center;
+  color: #555;
+  margin: 20px 0;
+}
+.error {
+  color: #ff0033;
+  text-align: center;
+  margin: 20px 0;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 4px 24px #718096;
+  text-align: center;
+}
+.modal-content img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+.close-btn {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: #0072e5;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px; height: 32px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .book-list { flex-direction: column; align-items: center; }
+  .app-container { padding: 4px; }
+  .modal-content { padding: 15px; width: 90vw; }
+}
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.search-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #d3d6db;
+  padding: 32px 24px;
+  max-width: 1000px;
+  margin: 32px auto 24px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #b2bec3;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 10px 22px;
+  cursor: pointer;
+  background: #0072e5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.search-bar button:hover {
+  background: #005bb5;
+}
+
+@media (max-width: 600px) {
+  .search-card {
+    padding: 16px 6px;
+  }
+  .search-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.dark-mode {
+  background: #15181a;
+  color: #e2e2e2;
+}
+
+.dark-mode .search-card,
+.dark-mode .book-card,
+.dark-mode .modal-content {
+  background: #23272f;
+  color: #e2e2e2;
+  box-shadow: 0 2px 12px #22282b;
+}
+ /* Dark mode text colors */
+
+ .dark-mode,
+.dark-mode body {
+  background: #15181a !important;
+  color: #e2e2e2 !important;
+}
+
+.dark-mode .app-container {
+  background: transparent;
+}
+
+.dark-mode h1,
+.dark-mode input,
+.dark-mode label,
+.dark-mode p,
+.dark-mode a {
+  color: #efefef;
+}
+
+.dark-mode .search-bar input,
+.dark-mode .search-bar button {
+  background: #181b21;
+  color: #e2e2e2;
+  border: 1px solid #393e46;
+}
+
+.dark-mode .search-bar button {
+  background: #206ddb;
+}
+
+.dark-mode .search-bar button:hover {
+  background: #0a4369;
+}
+
+.dark-mode .close-btn {
+  background: #206ddb;
+  color: #fff;
+}
+
+.dark-mode .loader {
+  color: #91bfff;
+}
+
+.dark-mode .error {
+  color: #ff7b7b;
+}
+.mode-toggle-btn {
+  padding: 8px 18px;
+  background: linear-gradient(90deg, #206ddb, #569aff);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 16px 0 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(32, 109, 219, 0.10);
+}
+
+.mode-toggle-btn:hover {
+  background: linear-gradient(90deg, #005bb5, #206ddb);
+  color: #e0eafc;
+}
+
+.dark-mode .mode-toggle-btn {
+  background: linear-gradient(90deg, #222d43, #25355a);
+  color: #a0a3b2;
+}
+
+.dark-mode .mode-toggle-btn:hover {
+  background: linear-gradient(90deg, #29406f, #26385b);
+  color: #fff;
+}
+
+
+
