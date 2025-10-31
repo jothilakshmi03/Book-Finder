@@ -24,34 +24,22 @@ A responsive React application to search, browse, and view book details using th
 
 1. Clone the repository:
 git clone https://github.com/jothilakshmi03/Book-Finder.git
+
 cd Book-Finder
 
-text
-
-2. Install dependencies:
+3. Install dependencies:
 npm install
-
-text
 
 ### Development
 
 To start the app locally:
-
 npm run dev
 
-text
-
 ### Build and Deploy
-
 To build for production:
-
 npm run build
-
-text
 To deploy to GitHub Pages (after `vite.config.js` `base` is set):
 npm run deploy
-
-text
 
 ## Usage
 
